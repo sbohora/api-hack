@@ -14,8 +14,13 @@
             <h1>Dog API: Example</h1>
             <label for="count">How many pictures do you want?</label><br><br>
             <input id= "count" type="text" value="3"><br><br>
-            <form>
-                <input type="submit" value="Get Pics">
+            <form id="js-random-dog-form">
+                <input type="submit" value="Get Any Dog Pics">
+            </form><br>
+            <label for="breed">Enter the breed?</label><br><br>
+            <input id= "breed" type="text"><br><br>
+            <form id="js-breed-dog-form">
+                <input type="submit" value="Get Dog Breeds">
             </form>
         </div>
         
@@ -23,6 +28,7 @@
             <h2>Here are the pictures!</h2>
             <img class="results-img" alt="">
         </section>
+        <div id="image-container"></div>
     </main>
 <script src="index.js"></script>
 </body>
